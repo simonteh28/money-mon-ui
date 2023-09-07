@@ -1,28 +1,13 @@
-<p-toolbar>
+<p-toolbar styleClass="bg-white-alpha-90">
   <div class="p-toolbar-group-start">
-    <p-button label="New" icon="pi pi-plus" class="mr-2"></p-button>
-    <p-button
-      label="Upload"
-      icon="pi pi-upload"
-      styleClass="p-button-success"
-    ></p-button>
-    <i
-      class="p-toolbar-separator pi pi-bars mr-2"
-      style="vertical-align: middle"
-    ></i>
-    <p-splitButton
-      label="Save"
-      icon="pi pi-check"
-      [model]="items"
-      styleClass="p-button-warning"
-    ></p-splitButton>
+    <span class="mm-title text-4xl">Money Mon</span>
   </div>
   <div class="p-toolbar-group-end">
-    <p-button icon="pi pi-search" class="mr-2"></p-button>
+    <p-button icon="pi pi-search" styleClass="p-button-text"></p-button>
     <p-button
       icon="pi pi-calendar"
-      styleClass="p-button-success mr-2"
+      styleClass="p-button-text"
     ></p-button>
-    <p-button icon="pi pi-times" styleClass="p-button-danger"></p-button>
+    <p-button icon="pi pi-cog" styleClass="p-button-text"></p-button>
   </div>
 </p-toolbar>

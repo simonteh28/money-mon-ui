@@ -1,0 +1,21 @@
+:host {
+    ::ng-deep .ui-button:focus, ::ng-deep .ui-button:enabled:focus{
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        -moz-box-shadow:none;
+        border-radius: 0;   
+    }
+}
+
+:host {
+    ::ng-deep .ui-button:hover, ::ng-deep .ui-button:enabled:hover{
+        border-radius: 0;  
+        background-color: lightgray;
+    }
+}
+
+:host {
+    ::ng-deep .p-button-label{
+        flex: 0;
+    }
+}

@@ -1,8 +1,14 @@
-<div class="card flex justify-content-center">
-  <p-sidebar [(visible)]="sidebarVisible">
-    <ng-template pTemplate="header">Header Content</ng-template>
-    <ng-template pTemplate="content">Body Content</ng-template>
-    <ng-template pTemplate="footer">Footer Content</ng-template>
-  </p-sidebar>
-  <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+<div class="flex flex-row shadow-2 h-full bg-white-alpha-90">
+  <div class="flex flex-column gap-2">
+    <p-button icon="pi pi-folder-open" styleClass="p-button-text p-button-lg ui-button" (click)="openSidebar()"></p-button>
+    <p-button icon="pi pi-sort-alt" styleClass="p-button-text p-button-lg ui-button" (click)="openSidebar()"></p-button>
+    <p-button icon="pi pi-cog" styleClass="p-button-text p-button-lg ui-button" (click)="openSidebar()"></p-button>
+  </div>
+  <div *ngIf="openPanel" [@inOutAnimation]>
+    <div  class="flex flex-column w-15rem m-3">
+      <span>Features</span>
+      <p-divider styleClass="p-divider-top"></p-divider>
+      <p-button label="Dashboard" icon="pi pi-chart-line" styleClass="p-button-text text-sm ui-button w-full m-0 pl-0 py-2"></p-button>
+    </div>
+  </div>
 </div>
