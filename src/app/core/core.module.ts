@@ -5,11 +5,12 @@ import { PrimeNgModule } from '../shared/primeng.module';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MaterialModule } from '../shared/material.module';
 import { CommonModule } from '@angular/common';
+import { KPIComponent } from './components/kpi/kpi.component';
 
 @NgModule({
-  declarations: [ToolbarComponent, SidebarComponent],
+  declarations: [ToolbarComponent, SidebarComponent, KPIComponent],
   imports: [PrimeNgModule, MaterialModule, CommonModule],
   providers: [ApiService],
-  exports: [ToolbarComponent, SidebarComponent],
+  exports: [ToolbarComponent, SidebarComponent, KPIComponent],
 })
 export class CoreModule {}

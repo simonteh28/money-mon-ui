@@ -1,4 +1,23 @@
-.mm-title{
-    font-family: 'Satisfy', cursive;
-    color: var(--primary-color);
+.mm-title {
+  font-family: "Satisfy", cursive;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mm-title:link {
+  text-decoration: none;
+}
+
+.mm-title:visited {
+  text-decoration: none;
+}
+
+.mm-title:hover {
+  text-decoration: none;
+}
+
+.mm-title:active {
+  text-decoration: none;
 }
