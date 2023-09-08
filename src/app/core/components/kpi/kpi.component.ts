@@ -11,4 +11,11 @@ export class KPIComponent {
 
   @Input()
   imgSrc?: string;
+
+  imgWidth: number | undefined;
+
+  @Input()
+  set width(width: string){
+    this.imgWidth = +width;
+  }
 }

@@ -1,16 +1,8 @@
-<div class="flex flex-column h-full">
-  <mm-toolbar></mm-toolbar>
-  <div class="flex flex-row flex-grow-1">
-    <mm-sidebar></mm-sidebar>
-    <div class="surface-50 flex-grow-1" (click)="closeSidebar()">
-      <div class="flex flex-column m-4">
-        <div class="flex flex-column md:flex-row gap-4">
-          <mm-kpi label="INCOME" imgSrc="assets/img/value.svg"></mm-kpi>
-          <mm-kpi label="EXPENSES" imgSrc="assets/img/rate.svg"></mm-kpi>
-          <mm-kpi label="MISC" imgSrc="assets/img/quantity.svg"></mm-kpi>
-          <mm-kpi label="MISC" imgSrc="assets/img/quantity.svg"></mm-kpi>
-        </div>
-      </div>
-    </div>
+<mm-layout>
+  <div fxLayout="column" fxLayout.xl="flex-row" fxLayoutGap="30">
+    <mm-kpi label="INCOME" imgSrc="assets/img/value.svg" fxFlex></mm-kpi>
+    <mm-kpi label="EXPENSES" imgSrc="assets/img/rate.svg" fxFlex></mm-kpi>
+    <mm-kpi label="MISC" imgSrc="assets/img/quantity.svg" width="300" fxFlex></mm-kpi>
+    <mm-kpi label="MISC" imgSrc="assets/img/quantity.svg" width="300" fxFlex></mm-kpi>
   </div>
-</div>
+</mm-layout>

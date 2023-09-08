@@ -1,6 +1,7 @@
 <div
-  class="flex justify-content-between flex-grow-1 bg-white-alpha-90 shadow-1 py-3 pl-3"
+  class="flex justify-content-between bg-white-alpha-90 shadow-1 py-3 pl-3"
 >
   <span>{{ label }}</span>
-  <img [src]="imgSrc" height="80px" />
+  <img *ngIf="imgWidth" [src]="imgSrc" height="80px" [width]="imgWidth"/>
+  <img *ngIf="!imgWidth" [src]="imgSrc" height="80px"/>
 </div>

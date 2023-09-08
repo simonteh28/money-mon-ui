@@ -1,0 +1,11 @@
+<div fxLayout="column" class="h-full">
+    <mm-toolbar></mm-toolbar>
+    <div fxLayout="row" fxFill>
+      <mm-sidebar></mm-sidebar>
+      <div class="surface-50 w-full" (click)="closeSidebar()">
+        <div fxLayout="column" class="m-4">
+          <ng-content></ng-content>
+        </div>
+      </div>
+    </div>
+</div>

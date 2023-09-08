@@ -8,6 +8,7 @@ import { DividerModule } from 'primeng/divider';
 import { MenuModule } from 'primeng/menu';
 import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
+// import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { ChipModule } from 'primeng/chip';
     MenuModule,
     CardModule,
     ChipModule,
+    // ChartModule,
   ],
   exports: [
     ToolbarModule,
@@ -29,6 +31,7 @@ import { ChipModule } from 'primeng/chip';
     MenuModule,
     CardModule,
     ChipModule,
+    // ChartModule,
   ],
 })
 export class PrimeNgModule {}

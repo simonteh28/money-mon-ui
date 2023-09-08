@@ -7,11 +7,5 @@ import { SidebarComponent } from 'src/app/core/components/sidebar/sidebar.compon
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
-  @ViewChild(SidebarComponent) _sidebar: SidebarComponent | undefined;
 
-  closeSidebar() {
-    if (this._sidebar) {
-      this._sidebar.closeSidebar();
-    }
-  }
 }
